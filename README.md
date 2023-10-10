@@ -15,7 +15,10 @@ Once this is done, you should be able to run
     ./configure
     make
     make install
-
+### Intel build
+```bash
+MPICC=mpiicc MPIF77=mpiifort MPIFC=mpiifort CC=mpiicc CCX=mpiicpc F90=mpiifort F77=mpiifort FC=mpiifort ./configure --prefix=/home/lcebamanos/software/IPM/intelMPI
+``` 
 As usual, you will likely want to examine key options available for the
 `configure` script, which can be viewed by running `./configure --help`. For
 example, you can enable support for hardware performance counter collection via
